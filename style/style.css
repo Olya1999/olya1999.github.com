@@ -1,0 +1,255 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.header {
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.header__inner {
+    padding: 15px 0;
+    background-color: rgba(0, 91, 193, .6);
+}
+
+.header__logo {
+    display: flex;
+    margin-left: 40px;
+}
+
+.header__title {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.logo__img {
+    width: 57px;
+    height: 50px;
+    margin-right: 7px;
+}
+
+.nav__container {
+    position: absolute;
+    top: 3%;
+    left: 40%;
+}
+
+.nav-link {
+    margin-left: 26px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.content__title {
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.content__text {
+    margin-bottom: 40px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    padding-right: 60px;
+}
+
+.content__btn {
+    max-width: 160px;
+    padding: 15px 40px;
+    background: none;
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.projects,
+.products,
+.rent {
+    padding-top: 150px;
+}
+
+.section__title {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.project__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #343434;
+    text-transform: uppercase;
+    
+}
+
+.title__border {
+    margin-right: 40px;
+}
+
+.projects__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item__img:first-child {
+    margin-right: 30px;
+}
+
+.products__nav {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.product-link {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #343434;
+}
+
+.product-link:first-child {
+    margin-right: 47px;
+}
+
+.active {
+    color: #005BC1;
+}
+
+.products__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product__img {
+    margin-left: 30px;
+}
+
+.product__img:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.product__img:first-child {
+    margin: 0;
+}
+
+.rent__item {
+    display: flex;
+}
+
+.rent__text {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 0 50px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #343434;
+}
+
+.rent__img {
+    width: 60%;
+}
+
+.rent__item__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #005BC1;
+    padding: 100px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 1120px) {
+    .projects__item {
+        justify-content: center;
+    }
+
+    .item__img:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .products__item {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .rent__text {
+        padding: 0;
+    }
+}
