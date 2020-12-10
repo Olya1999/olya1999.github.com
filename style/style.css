@@ -113,6 +113,11 @@ h6 {
     text-transform: uppercase;
 }
 
+.content__btn:hover {
+     background-color: #281ebf4d;
+     cursor: pointer;
+}
+
 .container {
     width: 100%;
     max-width: 1110px;
